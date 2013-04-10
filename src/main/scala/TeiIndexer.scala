@@ -23,7 +23,7 @@ object TeiIndexer {
 
  def main(args: Array[String]): Unit = {
 
-	if (args.length != 2) {
+	if (args.length != 4) {
 
 		// check to see that the directories or files passed in exist
 		val teiFilesToIndex = new File(args(0))
@@ -108,7 +108,7 @@ object TeiIndexer {
 		}
 	}else {
 	   logger.error("Welcome to the TEI file indexer.")
-	   logger.error("Please pass in these three arguments: ")
+	   logger.error("Please pass in these four arguments: ")
 	   logger.error("1) Directory of TEI files to index ")
 	   logger.error("2) Directory to move successfully indexed TEI files to ")
 	   logger.error("3) Directory to move failed TEI files to ")
